@@ -34,9 +34,13 @@
             </div>
           </div>
             
-          
+          <label for="models">Choose a model:</label>
+           <select name="models" id="models">
+             <option value="svm">SVM</option>
+             <option value="lr">Linear Regression</option>
+           </select>
+           <br><br>
            
-            
             
             <div class="dropdown">
             <button onclick="myFunction()" class="dropbtn">Dropdown</button>
@@ -98,13 +102,12 @@
       
 </div> <!-- /form -->
 <script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
+
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 
-// Close the dropdown if the user clicks outside of it
+
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
